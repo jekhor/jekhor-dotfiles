@@ -1,0 +1,35 @@
+// RUU (Russian-Ukrainian United keyboard layout).
+// Modified Russian standart keyboard with third level contains Ukrainian
+// and Belorusian alphabetic letters and commonly used Unicode symbols.
+// Description http://wiki.opennet.ru/RUU [russian]
+// Vasyĺ V. Vercynśkyj <fuckel@ukr.net>
+// Last Changes 2011/05/11
+//
+// ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━┓
+// │ ' ~ │ ! ≈ │ " ∞ │ № ₴ │ ; € │ % ‰ │ : ≤ │ ? ≥ │ * × │ ( { │ ) } │ _ – │ + ± ┃ ⌫       ┃
+// │ ’  ́ │ 1 ÷ │ 2 ¤ │ 3 § │ 4 $ │ 5 ° │ 6 < │ 7 > │ 8 • │ 9 [ │ 0 ] │ - — │ = ≠ ┃Backspace┃
+// ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━┫
+// ┃       ┃ Й   │ Ц   │ У Ў │ К   │ Е Ё │ Н   │ Г Ґ │ Ш   │ Щ   │ З   │ Х   │ Ъ Ї ┃ Enter ┃
+// ┃ Tab ↹ ┃ й   │ ц   │ у ў │ к ® │ е ё │ н   │ г ґ │ ш   │ щ   │ з   │ х   │ ъ ї ┃   ⏎   ┃
+// ┣━━━━━━━┻┱────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┺┓      ┃
+// ┃ Caps   ┃ Ф   │ Ы І │ В   │ А   │ П   │ Р   │ О   │ Л   │ Д   │ Ж   │ Э Є │ | ¦ ┃      ┃
+// ┃ Lock ⇬ ┃ ф   │ ы і │ в   │ а   │ п   │ р   │ о   │ л   │ д   │ ж   │ э є │ / \ ┃      ┃
+// ┣━━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┷━━━━━┻━━━━━━┫
+// ┃          ┃ Я   │ Ч   │ С   │ М   │ И   │ Т   │ Ь   │ Б „ │ Ю “ │ , … ┃                ┃
+// ┃  Shift ⇧ ┃ я   │ ч   │ с © │ м   │ и   │ т ™ │ ь µ │ б « │ ю » │ . / ┃     Shift ⇧    ┃
+// ┣━━━━━━━┳━━┻━━━━┳┷━━━━━┷┱────┴─────┴─────┴─────┴─────┴─────┴┲━━━━┷━━┳━━┻━━━━┳━━━━━━━┳━━━┛
+// ┃       ┃       ┃       ┃                                   ┃       ┃       ┃       ┃
+// ┃ Ctrl  ┃ Meta  ┃  Alt  ┃                Space              ┃AltGr ⇮┃ Menu  ┃ Ctrl  ┃
+// ┗━━━━━━━┻━━━━━━━┻━━━━━━━┹───────────────────────────────────┺━━━━━━━┻━━━━━━━┻━━━━━━━┛
+
+
+
+partial alphanumeric_keys
+xkb_symbols "ruu_jekhor" {
+    include "ru(ruu)"
+
+    name[Group1]= "Russian (RUU)";
+
+    key <TLDE> {    [	Cyrillic_io,	Cyrillic_IO,	asciitilde,	U0301		]	};	// Apostrophe and Stress symbol
+    key	<AD09> {    [	Cyrillic_shcha,	Cyrillic_SHCHA,	Byelorussian_shortu, Byelorussian_SHORTU ] };
+};

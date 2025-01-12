@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xkbConfigRegistry SYSTEM "xkb.dtd">
+<xkbConfigRegistry version="1.1">
+  <layoutList>
+    <layout>
+      <configItem>
+        <name>lt</name>
+      </configItem>
+      <variantList>
+        <variant>
+          <configItem>
+            <name>intl</name>
+            <shortDescription>LT intl</shortDescription>
+            <description>Lithuanian (intl.)</description>
+          </configItem>
+        </variant>
+      </variantList>
+    </layout>
+    <layout>
+      <configItem>
+        <name>ru</name>
+      </configItem>
+      <variantList>
+        <variant>
+          <configItem>
+            <name>ruu_jekhor</name>
+            <shortDescription>RUU_jekhor</shortDescription>
+            <description>Russian (RUU_jekhor)</description>
+          </configItem>
+        </variant>
+      </variantList>
+    </layout>
+    <layout>
+      <configItem>
+        <name>by</name>
+      </configItem>
+      <variantList>
+        <variant>
+          <configItem>
+            <name>ruu</name>
+            <shortDescription>RUU</shortDescription>
+            <description>Belarusian (RUU)</description>
+          </configItem>
+        </variant>
+      </variantList>
+    </layout>
+  </layoutList>
+  <optionList>
+    <group allowMultipleSelection="true">
+      <configItem>
+        <name>grp_custom</name>
+        <description>Custom switching to another layout</description>
+      </configItem>
+      <option>
+        <configItem>
+          <name>grp_custom:caps_pairs</name>
+          <description>2 layout pairs, switch layouts inside pairs by Caps Lock, switch pairs with Shift-Caps Lock</description>
+        </configItem>
+      </option>
+    </group>
+  </optionList>
+</xkbConfigRegistry>

@@ -1,0 +1,31 @@
+partial default xkb_symbols "caps_pairs" {
+
+// Group1: us
+// Group2: ru
+// Group3: us
+// Group4: by
+
+	replace key <CAPS> {
+		repeat=No,
+		[NoSymbol, NoSymbol],
+		[NoSymbol, NoSymbol],
+		[NoSymbol, NoSymbol],
+		[NoSymbol, NoSymbol],
+		actions[Group1]= [ LockGroup(group=2), LockGroup(group=3) ],
+		actions[Group2]= [ LockGroup(group=1), LockGroup(group=4) ],
+		actions[Group3]= [ LockGroup(group=4), LockGroup(group=1) ],
+		actions[Group4]= [ LockGroup(group=3), LockGroup(group=2) ]
+	};
+
+	replace key <PRSC> {
+		repeat=No,
+		[NoSymbol, NoSymbol],
+		[NoSymbol, NoSymbol],
+		[NoSymbol, NoSymbol],
+		[NoSymbol, NoSymbol],
+		actions[Group1]= [ NoAction(), LockGroup(group=2) ],
+		actions[Group2]= [ LockGroup(group=1), NoAction() ],
+		actions[Group3]= [ NoAction(), LockGroup(group=4) ],
+		actions[Group4]= [ LockGroup(group=3), NoAction() ]
+	};
+};

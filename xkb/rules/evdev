@@ -1,0 +1,4 @@
+! option = symbols
+  grp_custom:caps_pairs = +group_pairing(caps_pairs)
+
+! include %S/evdev
