@@ -19,4 +19,5 @@ xkb_symbols "intl" {
     key <AB01>	{ [         z,          Z,       zcaron,       Zcaron ]	};
     key <AB03>	{ [         c,          C,       ccaron,       Ccaron ]	};
 
+    include "level3(ralt_switch)"
 };
